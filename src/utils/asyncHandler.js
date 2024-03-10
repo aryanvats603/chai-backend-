@@ -6,7 +6,11 @@ const asyncHandler = (requestHandler) => {
 
 
 export { asyncHandler }
-
+// asyncHandler is a higher-order function that takes a requestHandler function as an argument.
+// It returns another function that takes req, res, and next as arguments (typical Express.js middleware signature).
+// Inside this function, requestHandler is invoked asynchronously with req, res, and next arguments. The result is wrapped in a Promise using Promise.resolve.
+// If the Promise resolves successfully, nothing happens.
+// If the Promise rejects (i.e., an error occurs), the error is passed to the next middleware using next(err).
 
 
 
@@ -25,3 +29,5 @@ export { asyncHandler }
 //         })
 //     }
 // }
+
+?
