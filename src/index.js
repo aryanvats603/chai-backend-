@@ -4,6 +4,7 @@ import connectDB from "./db/index.js"
 // require('dotenv').config({path:'./env'}) consistency kharab
 
 import dotenv from "dotenv"
+import {app} from "./app.js"
 
 dotenv.config({
     path:'./.env'
